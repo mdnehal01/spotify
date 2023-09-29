@@ -13,7 +13,7 @@ html, body{
     padding: 0;
 }
 body{
-    overflow-x: hidden;
+    overflow-x: none;
 }
 /*#outer::-webkit-scroll{
     width: 10px;
