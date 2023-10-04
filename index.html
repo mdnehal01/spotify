@@ -8,13 +8,36 @@
         body{
             display: flex;
             flex-direction: ;
+            overflow-x:hidden;
+        }
+        
+        #outer{
+            overflow-x:hidden;
         }
     </style>
     <link rel="stylesheet" href="css/stylecopy.css">
     <script src="https://kit.fontawesome.com/697eb2b181.js" crossorigin="anonymous"></script>
+    
+    <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "67c201f9-1b78-49ac-8150-c2482d068821", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "ee4082c7-5844-4a2e-9656-112ec083c20b", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+
+
 </head>
 <body>
     <div id="outer">
+    
         <div id="left">
             <button class="close-btn" onclick="navbarInVisible()">
                 <span class="stick1"></span>
@@ -108,7 +131,6 @@
     <script src="js/stf.js"></script>
 </body>
 </html>
-
 
 
 
